@@ -1,0 +1,33 @@
+{
+  "name": "fileserver",
+  "version": "1.0.0",
+  "description": "Jarvis' fileserver",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:server": "rm -rf ./build && webpack --config webpack.config.server.js"
+  },
+  "keywords": [
+    "file",
+    "jarvis"
+  ],
+  "author": "Daniel Hirsch",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.13.3",
+    "start-server-webpack-plugin": "^2.2.0",
+    "webpack": "^3.10.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "curl": "^0.1.4",
+    "express": "^4.16.2",
+    "querystring": "^0.2.0",
+    "react-player": "^0.25.3",
+    "shelljs": "^0.8.1"
+  }
+}
